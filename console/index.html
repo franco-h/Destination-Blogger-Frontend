@@ -12,8 +12,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="mb-5">
@@ -50,10 +48,11 @@
           <div class="nav flex-column nav-pills me-3 border rounded w-25 p-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <button class="nav-link active" id="v-pills-articles-tab" data-bs-toggle="pill" data-bs-target="#v-pills-articles" type="button" role="tab" aria-controls="v-pills-articles" aria-selected="true">Articles</button>
             <button class="nav-link" id="v-pills-contantreqs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contantreqs" type="button" role="tab" aria-controls="v-pills--contantreqs" aria-selected="false">Contact requests</button>
+            <button class="nav-link" id="v-pills-add-post-tab" data-bs-toggle="pill" data-bs-target="#v-pills-add-post" type="button" role="tab" aria-controls="v-pills-add-post" aria-selected="false">Create Article</button>
           </div>
           <div class="tab-content border rounded w-75 p-2" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-articles" role="tabpanel" aria-labelledby="v-pills-articles-tab">
-              <button class="btn btn-primary mb-3">Add acrticle</button>
+              <button class="add-post btn btn-primary mb-3">Add article</button>
               <table class="articles-list table table-striped">
                 <tr>
                   <td>1</td>
@@ -80,6 +79,12 @@
             </div>
 
             <div class="tab-pane fade" id="v-pills-contantreqs" role="tabpanel" aria-labelledby="v-pills-contantreqs-tab">Contact Request Detail</div>
+
+            <div class="tab-pane fade" id="v-pills-add-post" role="tabpanel" aria-labelledby="v-pills-add-post-tab">
+              <h1>Create Article</h1>
+            </div>
+          </div>
+    
           </div>
         </div>
       </div>
@@ -87,6 +92,6 @@
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="/console/js/main.js"></script>
+    <script src="/console/js/app.js"></script>
   </body>
 </html>
