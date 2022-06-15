@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         let postHTML = `
         <tr>
         <td>${index++}<input type="hidden" value="${post.id}"></td>
-        <td>${post.destination}</td>
-        <td>${post.location}</td>
+        <td class="destination">${post.destination}</td>
+        <td class="location">${post.location}</td>
         <td><button class="edit-btn btn-link p-0 text-decoration">Edit</button></td>
         <td><button class="remove-btn btn btn-link p-0 text-decoration">Delete</button></td>
         </tr>
