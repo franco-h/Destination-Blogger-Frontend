@@ -1,14 +1,14 @@
 // Contact the server and get the post
 async function getPost() {
     // 
-    return await fetch('http://localhost:3000/posts')
+    return await fetch('https://destination-blogger.herokuapp.com/posts')
         .then((res) => res.json())
         .then((data) => data);
 }
 
 // Contact the server and get the contact request data
 async function getContact() {
-    return await fetch('http://localhost:3000/contact')
+    return await fetch('https://destination-blogger.herokuapp.com/contact')
         .then((res) => res.json())
         .then((data) => data);
 }
@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         let postHTML = `
         <tr>
         <td>${post.id}</td>
-        <td>${post.Destination}</td>
-        <td>${post.Location}</td>
+        <td>${post.destination}</td>
+        <td>${post.location}</td>
         <td><button class="btn btn-link p-0 text-decoration">Edit</button></td>
         <td><button class="btn btn-link p-0 text-decoration">Delete</button></td>
         </tr>
