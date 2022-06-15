@@ -104,3 +104,27 @@ below is the code for the popup*/
 
     margin-top: 50px;
 }
+
+/* This will be google maps*/
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:80%;
+    width:100%;
+    position:absolute;
+    
+  }
+
+  #map-container-google-1{
+    padding-bottom: 0px;
+  }
+
+
+
