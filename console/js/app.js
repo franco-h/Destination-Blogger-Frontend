@@ -8,7 +8,7 @@ async function getPost() {
 
 // Contact the server and get the contact request data
 async function getContact() {
-    return await fetch('https://destination-blogger.herokuapp.com/contact')
+    return await fetch('https://destination-blogger.herokuapp.com/contacts')
         .then((res) => res.json())
         .then((data) => data);
 }
