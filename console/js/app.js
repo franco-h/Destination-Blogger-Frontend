@@ -19,15 +19,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     let articles = document.querySelector('.articles-list tbody');
     // clear the table
     articles.innerHTML = '';
+    let index = 1;
     // Use template literal to display the post
     posts.forEach((post) => {
         let postHTML = `
         <tr>
-        <td>${post.id}</td>
+        <td>${index++}<input type="hidden" value="${post.id}"></td>
         <td>${post.destination}</td>
         <td>${post.location}</td>
-        <td><button class="btn btn-link p-0 text-decoration">Edit</button></td>
-        <td><button class="btn btn-link p-0 text-decoration">Delete</button></td>
+        <td><button class="edit-btn btn-link p-0 text-decoration">Edit</button></td>
+        <td><button class="remove-btn btn btn-link p-0 text-decoration">Delete</button></td>
         </tr>
         `;
         articles.insertAdjacentHTML('beforeend', postHTML);
