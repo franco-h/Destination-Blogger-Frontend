@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     posts.forEach((post) => {
         let postHTML = `
         <tr>
-        <td>${index++}<input type="hidden" value="${post.id}"></td>
+        <td>${index++}<input class="id" type="hidden" value="${post.id}"></td>
         <td class="destination">${post.destination}</td>
         <td class="location">${post.location}</td>
-        <td><button class="edit-btn btn-link p-0 text-decoration">Edit</button></td>
-        <td><button class="remove-btn btn btn-link p-0 text-decoration">Delete</button></td>
+        <td><button class="edit-btn btn-link p-0 text-decoration-none">Edit</button></td>
+        <td><button class="remove-btn btn btn-link p-0 text-decoration-none">Delete</button></td>
         </tr>
         `;
         articles.insertAdjacentHTML('beforeend', postHTML);

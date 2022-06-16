@@ -19,5 +19,5 @@ createForm.addEventListener('submit', function(e) {
             description: description.value,
             image: image.value,
         })
-    }).then(res => res.text()).then(data => window.history.go);
+    }).then(res => res.text()).then((data) => window.history.go());
 });
