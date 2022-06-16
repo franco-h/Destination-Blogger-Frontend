@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Blog</title>
+    <title><%= destination %></title>
     <!--Link to bootstrap 5-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
     <header>
@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">About Us</a> -->
@@ -32,7 +32,7 @@
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contact-us-form">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./console/index.html">Blogger Console</a>
+                <a class="nav-link" aria-current="page" href="../console/index.html">Blogger Console</a>
               </li>
             </ul>
             </form>
@@ -43,13 +43,15 @@
     <main>
       
       <div class="detailPageRow">
+        <img src="<%= image %>" alt="<%= destination %>">
           <div class="text-center">
-            <button type="button" class="btn btn-primary">Destination</button>
+            <button type="button" class="btn btn-primary"><%= destination %></button>
           </div>
           <br>
           <div class="text-center">
-            <button type="button" class="btn btn-primary">Location</button>
+            <button type="button" class="btn btn-primary"><%= location %></button>
           </div>
+          <p class="description"><%= description %></p>
         
 
          <div class="d-flex justify-content-center" >

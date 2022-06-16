@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="card-body">
           <h5 class="card-title">${post.destination}</h5>
           <p class="card-text">${post.description}</p>
-          <a href="./detail.html" class="btn btn-primary">Details</a>
+          <a href="./detail?id=${post.id}" class="btn btn-primary">Details</a>
         </div>
       </div>
         `;
