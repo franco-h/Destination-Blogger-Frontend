@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="card-body">
           <h5 class="card-title">${post.destination}</h5>
           <p class="card-text">${post.description}</p>
-          <a href="./detail?id=${post.id}" class="btn btn-primary">Details</a>
+        
+          <button class="btn btn-primary" onclick="saveCardDetails('${post.destination}')">Details </button>
         </div>
       </div>
         `;
@@ -37,7 +38,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     })
 });
 
+function saveCardDetails(destination) {
+    localStorage.setItem("dest", destination)
 
+    // localStorage.getItem("dest")
+
+    window.location.pathname = "/detail.html"
+    
+}
 
 let contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit', function(e) {
