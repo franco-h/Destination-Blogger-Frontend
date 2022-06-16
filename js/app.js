@@ -43,9 +43,20 @@ function saveCardDetails(destination) {
 
     // localStorage.getItem("dest")
 
-    window.location.pathname = "/detail.html"
-    
+    window.location.pathname = "/detail.html"   
 }
+
+//  async function initMap(destination) {
+
+//     let newDest = destination; 
+
+//     let map = new google.maps.Map(
+//         document.getElementById("map"), {zoom: 8, center: newDest }
+//     );
+//     let marker = new google.maps.Marker({position:newDest, map: map})
+    
+// }
+
 
 let contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit', function(e) {
