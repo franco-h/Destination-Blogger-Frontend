@@ -43,7 +43,7 @@ function saveCardDetails(destination) {
 
     // localStorage.getItem("dest")
 
-    window.location.pathname = "../detail.html"   
+    window.location.pathname = "./Destination-Blogger-Frontend/detail.html"   
 }
 
 //  async function initMap(destination) {
