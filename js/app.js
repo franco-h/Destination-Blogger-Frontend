@@ -58,30 +58,30 @@ function saveCardDetails(destination) {
 // }
 
 
-let contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+// let contactForm = document.querySelector('.contact-form');
+// contactForm.addEventListener('submit', function(e) {
+//     e.preventDefault();
 
-    // Check if the email is valid before fetching the data
-    let email = document.querySelector('#email').value;
-    let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!regex.test(email)) {
-        alert('Please enter a valid email');
-        return;
-    } else {
-        // Fetch the data
-        let data = {
-            name: document.querySelector('#name').value,
-            email: document.querySelector('#email').value,
-            message: document.querySelector('#message').value
-          }
-        fetch('https://destination-blogger.herokuapp.com/contacts', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-        .then(res => res.text()).then(data => console.log(data));
-    }
-});
+//     // Check if the email is valid before fetching the data
+//     let email = document.querySelector('#email').value;
+//     let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     if (!regex.test(email)) {
+//         alert('Please enter a valid email');
+//         return;
+//     } else {
+//         // Fetch the data
+//         let data = {
+//             name: document.querySelector('#name').value,
+//             email: document.querySelector('#email').value,
+//             message: document.querySelector('#message').value
+//           }
+//         fetch('https://destination-blogger.herokuapp.com/contacts', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify(data)
+//         })
+//         .then(res => res.text()).then(data => console.log(data));
+//     }
+// });
