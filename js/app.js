@@ -43,7 +43,8 @@ function saveCardDetails(destination) {
 
     // localStorage.getItem("dest")
     // set the window location to the details page of github.io
-    window.location.href = './map/details.html';
+    
+    window.location.href = './details.html';
 }
 
 //  async function initMap(destination) {
